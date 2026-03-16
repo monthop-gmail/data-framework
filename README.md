@@ -195,6 +195,21 @@ ai_data_audit.md        <- AI สารภาพสิ่งที่ทำ
 
 ---
 
+## Related Projects
+
+| Project | คำอธิบาย |
+|---------|----------|
+| [rag-audit-th](https://github.com/monthop-gmail/rag-audit-th) | Compliance framework และ audit checklist สำหรับระบบ RAG — รองรับ PDPA และบริบทกฎหมายไทย |
+
+ทั้งสอง repo มาจากแนวคิดเดียวกัน: **AI ต้องตรวจสอบได้ (Auditability) และทำงานภายใต้กรอบที่กำหนด (Governance)**
+
+- **data-framework** → audit ตัว **การวิเคราะห์ข้อมูล survey** (data quality, bias, persona-aware reporting)
+- **rag-audit-th** → audit ตัว **ระบบ RAG** (pipeline, knowledge base, security, PDPA)
+
+ใช้ร่วมกันได้ เช่น ระบบ RAG ที่ดึงข้อมูล survey มาตอบคำถาม — ใช้ data-framework ควบคุมคุณภาพการวิเคราะห์ และใช้ rag-audit-th ตรวจ pipeline
+
+---
+
 ## Credits
 
 - Framework design: ChatGPT + Human Data Steward collaboration
